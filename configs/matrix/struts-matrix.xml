@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" 
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	
+	<!-- platform.sys01010 -->
+	<package name="lab100002" namespace="/lab/lab100002" extends="defPackage">
+		<action name="init" method="init" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100002/list.jsp</result>
+		</action>
+		<action name="search" method="search" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100002/list.jsp</result>
+		</action>
+		<action name="create" method="create" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100002/edit.jsp</result>
+		</action>
+		<action name="createSubmit" method="createSubmit" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100002/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100002/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100002/show.jsp</result>
+		</action>
+		<action name="createConfirm" method="createConfirm" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100002/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100002/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100002/show.jsp</result>
+		</action>
+		<action name="update" method="update" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100002/edit.jsp</result>
+		</action>
+		<action name="updateSubmit" method="updateSubmit" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100002/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100002/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100002/show.jsp</result>
+		</action>
+		<action name="updateConfirm" method="updateConfirm" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100002/edit.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100002/show.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100002/confirm.jsp</result>
+		</action>
+		<action name="copy" method="copy" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100002/edit.jsp</result>
+		</action>
+		<action name="copySubmit" method="copySubmit" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100002/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100002/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100002/show.jsp</result>
+		</action>
+		<action name="copyConfirm" method="copyConfirm" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100002/edit.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100002/show.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100002/confirm.jsp</result>
+		</action>
+		<action name="delete" method="delete" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100002/confirm.jsp</result>
+		</action>
+		<action name="deleteConfirm" method="deleteConfirm" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100002/confirm.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100002/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100002/show.jsp</result>
+		</action>
+		<action name="query" method="query" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100002/show.jsp</result>
+		</action>
+		<!-- 主管覆核 -->
+		<action name="approve" method="approve" class="com.dc.matrix.lab.action.Lab100002Action">
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100002/show.jsp</result>
+			<result name="approve">/WEB-INF/pages/matrix/lab/lab100002/approve.jsp</result>
+		</action>
+	</package>
+	
+	
+	
+	<package name="lab100022" namespace="/lab/lab100022" extends="defPackage">
+		<action name="init" method="init" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100022/list.jsp</result>
+		</action>
+		
+		<action name="search" method="search" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100022/list.jsp</result>
+		</action>
+		
+		<action name="create" method="create" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100022/edit.jsp</result>
+		</action>
+		
+		<action name="createSubmit" method="createSubmit" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100022/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100022/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100022/show.jsp</result>
+		</action>
+		
+		<action name="createConfirm" method="createConfirm" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100022/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100022/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100022/show.jsp</result>
+		</action>
+		
+		<action name="update" method="update" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100022/edit.jsp</result>
+		</action>
+		
+		<action name="updateSubmit" method="updateSubmit" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100022/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100022/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100022/show.jsp</result>
+		</action>
+		
+		<action name="updateConfirm" method="updateConfirm" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100022/edit.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100022/show.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100022/confirm.jsp</result>
+		</action>
+		
+		<action name="copy" method="copy" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100022/edit.jsp</result>
+		</action>
+		
+		<action name="copySubmit" method="copySubmit" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100022/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100022/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100022/show.jsp</result>
+		</action>
+		
+		<action name="copyConfirm" method="copyConfirm" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100022/edit.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100022/show.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100022/confirm.jsp</result>
+		</action>
+		
+		<action name="delete" method="delete" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100022/confirm.jsp</result>
+		</action>
+		
+		<action name="deleteConfirm" method="deleteConfirm" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100022/confirm.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100022/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100022/show.jsp</result>
+		</action>
+		
+		<action name="query" method="query" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100022/show.jsp</result>
+		</action>
+		
+		<!-- 主管覆核 -->
+		<action name="approve" method="approve" class="com.dc.matrix.lab.action.Lab100022Action">
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100022/show.jsp</result>
+			<result name="approve">/WEB-INF/pages/matrix/lab/lab100022/approve.jsp</result>
+		</action>
+		
+	</package>
+	
+	
+	<package name="lab100032" namespace="/lab/lab100032" extends="defPackage">
+		<action name="init" method="init" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100032/list.jsp</result>
+		</action>
+		
+		<action name="search" method="search" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100032/list.jsp</result>
+		</action>
+		
+		<action name="create" method="create" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100032/edit.jsp</result>
+		</action>
+		
+		<action name="createSubmit" method="createSubmit" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100032/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100032/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100032/show.jsp</result>
+		</action>
+		
+		<action name="createConfirm" method="createConfirm" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100032/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100032/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100032/show.jsp</result>
+		</action>
+		
+		<action name="update" method="update" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100032/edit.jsp</result>
+		</action>
+		
+		<action name="updateSubmit" method="updateSubmit" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100032/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100032/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100032/show.jsp</result>
+		</action>
+		
+		<action name="updateConfirm" method="updateConfirm" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100032/edit.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100032/show.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100032/confirm.jsp</result>
+		</action>
+		
+		<action name="copy" method="copy" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100032/edit.jsp</result>
+		</action>
+		
+		<action name="copySubmit" method="copySubmit" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100032/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100032/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100032/show.jsp</result>
+		</action>
+		
+		<action name="copyConfirm" method="copyConfirm" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100032/edit.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100032/show.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100032/confirm.jsp</result>
+		</action>
+		
+		<action name="delete" method="delete" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100032/confirm.jsp</result>
+		</action>
+		
+		<action name="deleteConfirm" method="deleteConfirm" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab100032/confirm.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100032/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab100032/show.jsp</result>
+		</action>
+		
+		<action name="query" method="query" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result>/WEB-INF/pages/matrix/lab/lab100032/show.jsp</result>
+		</action>
+		
+		<!-- 主管覆核 -->
+		<action name="approve" method="approve" class="com.dc.matrix.lab.action.Lab100032Action">
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab100032/show.jsp</result>
+			<result name="approve">/WEB-INF/pages/matrix/lab/lab100032/approve.jsp</result>
+		</action>
+		
+	</package>
+	
+	
+	<package name="lab200012" namespace="/lab/lab200012" extends="defPackage">
+		<action name="init" method="init" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result>/WEB-INF/pages/matrix/lab/lab200012/list.jsp</result>
+		</action>
+		
+		<action name="search" method="search" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result>/WEB-INF/pages/matrix/lab/lab200012/list.jsp</result>
+		</action>
+		
+		<action name="create" method="create" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result>/WEB-INF/pages/matrix/lab/lab200012/edit.jsp</result>
+		</action>
+		
+		<action name="createSubmit" method="createSubmit" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab200012/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab200012/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab200012/show.jsp</result>
+		</action>
+		
+		<action name="createConfirm" method="createConfirm" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab200012/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab200012/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab200012/show.jsp</result>
+		</action>
+		
+		<action name="update" method="update" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result>/WEB-INF/pages/matrix/lab/lab200012/edit.jsp</result>
+		</action>
+		
+		<action name="updateSubmit" method="updateSubmit" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab200012/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab200012/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab200012/show.jsp</result>
+		</action>
+		
+		<action name="updateConfirm" method="updateConfirm" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab200012/edit.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab200012/show.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab200012/confirm.jsp</result>
+		</action>
+		
+		<action name="copy" method="copy" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result>/WEB-INF/pages/matrix/lab/lab200012/edit.jsp</result>
+		</action>
+		
+		<action name="copySubmit" method="copySubmit" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab200012/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab200012/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab200012/show.jsp</result>
+		</action>
+		
+		<action name="copyConfirm" method="copyConfirm" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab200012/edit.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab200012/show.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab200012/confirm.jsp</result>
+		</action>
+		
+		<action name="delete" method="delete" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result>/WEB-INF/pages/matrix/lab/lab200012/confirm.jsp</result>
+		</action>
+		
+		<action name="deleteConfirm" method="deleteConfirm" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result name="input">/WEB-INF/pages/matrix/lab/lab200012/confirm.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab200012/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/lab/lab200012/show.jsp</result>
+		</action>
+		
+		<action name="query" method="query" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result>/WEB-INF/pages/matrix/lab/lab200012/show.jsp</result>
+		</action>
+		
+		<!-- 主管覆核 -->
+		<action name="approve" method="approve" class="com.dc.matrix.lab.action.Lab200012Action">
+			<result name="confirm">/WEB-INF/pages/matrix/lab/lab200012/show.jsp</result>
+			<result name="approve">/WEB-INF/pages/matrix/lab/lab200012/approve.jsp</result>
+		</action>
+		
+	</package>
+	
+	
+	<package name="exam100002" namespace="/exam/exam100002" extends="defPackage">
+		<action name="init" method="init" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result>/WEB-INF/pages/matrix/exam/exam100002/list.jsp</result>
+		</action>
+		<action name="search" method="search" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result>/WEB-INF/pages/matrix/exam/exam100002/list.jsp</result>
+		</action>
+		<action name="create" method="create" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result>/WEB-INF/pages/matrix/exam/exam100002/edit.jsp</result>
+		</action>
+		<action name="createSubmit" method="createSubmit" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result name="input">/WEB-INF/pages/matrix/exam/exam100002/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/exam/exam100002/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/exam/exam100002/show.jsp</result>
+		</action>
+		<action name="createConfirm" method="createConfirm" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result name="input">/WEB-INF/pages/matrix/exam/exam100002/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/exam/exam100002/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/exam/exam100002/show.jsp</result>
+		</action>
+		<action name="update" method="update" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result>/WEB-INF/pages/matrix/exam/exam100002/edit.jsp</result>
+		</action>
+		<action name="updateSubmit" method="updateSubmit" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result name="input">/WEB-INF/pages/matrix/exam/exam100002/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/exam/exam100002/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/exam/exam100002/show.jsp</result>
+		</action>
+		<action name="updateConfirm" method="updateConfirm" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result name="input">/WEB-INF/pages/matrix/exam/exam100002/edit.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/exam/exam100002/show.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/exam/exam100002/confirm.jsp</result>
+		</action>
+		<action name="copy" method="copy" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result>/WEB-INF/pages/matrix/exam/exam100002/edit.jsp</result>
+		</action>
+		<action name="copySubmit" method="copySubmit" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result name="input">/WEB-INF/pages/matrix/exam/exam100002/edit.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/exam/exam100002/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/exam/exam100002/show.jsp</result>
+		</action>
+		<action name="copyConfirm" method="copyConfirm" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result name="input">/WEB-INF/pages/matrix/exam/exam100002/edit.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/exam/exam100002/show.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/exam/exam100002/confirm.jsp</result>
+		</action>
+		<action name="delete" method="delete" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result>/WEB-INF/pages/matrix/exam/exam100002/confirm.jsp</result>
+		</action>
+		<action name="deleteConfirm" method="deleteConfirm" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result name="input">/WEB-INF/pages/matrix/exam/exam100002/confirm.jsp</result>
+			<result name="confirm">/WEB-INF/pages/matrix/exam/exam100002/confirm.jsp</result>
+			<result name="show">/WEB-INF/pages/matrix/exam/exam100002/show.jsp</result>
+		</action>
+		<action name="query" method="query" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result>/WEB-INF/pages/matrix/exam/exam100002/show.jsp</result>
+		</action>
+		<!-- 主管覆核 -->
+		<action name="approve" method="approve" class="com.dc.matrix.exam.action.Exam100002Action">
+			<result name="confirm">/WEB-INF/pages/matrix/exam/exam100002/show.jsp</result>
+			<result name="approve">/WEB-INF/pages/matrix/exam/exam100002/approve.jsp</result>
+		</action>
+	</package>
+</struts>

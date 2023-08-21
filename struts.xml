@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" 
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+	<constant name="struts.custom.i18n.resources" value="resources.5403WI_lab, resources.5403WI_exam, resources.808WI_dataItem, resources.808WI_errMessage, resources.808WI_fixWord" />
+	<constant name="struts.multipart.maxSize" value="10000000" /><!--文件上傳前確認檔案大小 KB -->
+	<constant name="struts.freemarker.templatesCache" value="true" /><!--是否對FreeMarker的範本進行緩存 -->
+
+	<!--訪問靜態方法-->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" /> 
+	<!--新增加了參數為struts.excludedClasses,此參數為了嚴格驗證排除一些不安全的物件類型。-->
+	<constant name="struts.excludedClasses" 
+		value=" java.lang.Object, java.lang.Runtime, java.lang.System,
+			java.lang.ClassLoader, java.lang.Shutdown, ognl.OgnlContext,
+			ognl.MemberAccess, ognl.ClassResolver, ognl.TypeConverter,
+			com.opensymphony.xwork2.ActionContext" />
+	<!--<constant name="struts.allowed.action.names" value="[a-zA-Z]*" />-->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+
+	<package name="defPackage" extends="struts-default, json-default" abstract="true">
+		<global-results>
+			<result name="error">/WEB-INF/pages/platform/error/errException.jsp</result>
+			<result name="authError">/WEB-INF/pages/platform/error/errAuthException.jsp</result>
+			<result name="chainFail">/denied.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="authError" exception="com.dc.core.exception.dcAuthException"/>
+			<exception-mapping result="error" exception="com.dc.core.exception.dcApplicationException"></exception-mapping>
+			<exception-mapping result="error" exception="java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+
+	<include file="configs/platform/struts-platform.xml" />
+	<include file="configs/platform/struts-win.xml" />
+	<include file="configs/platform/struts-ajax.xml" />
+
+	<include file="configs/matrix/struts-matrix.xml" />
+	<include file="configs/matrix/struts-win.xml" />
+
+
+</struts>
